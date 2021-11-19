@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Hero : MonoBehaviour
 {
@@ -33,5 +34,14 @@ public class Hero : MonoBehaviour
         }
 
         HeroRigid.velocity = new Vector2(Input.acceleration.x * 10f, HeroRigid.velocity.y);
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.name == "DeadZone")
+        {
+            SceneManager.LoadScene(0);
+            //Debug.Log("test");
+        }
     }
 }
