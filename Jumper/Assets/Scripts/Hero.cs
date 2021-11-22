@@ -8,6 +8,7 @@ public class Hero : MonoBehaviour
     public static Hero instance;
     float horisontal;
     public Rigidbody2D HeroRigid;
+    public Platform Platform;
     void Start()
     {
         if (instance == null)
@@ -40,6 +41,9 @@ public class Hero : MonoBehaviour
     {
         if (collision.collider.name == "DeadZone")
         {
+            PlayerPrefs.SetInt("SavedScore", Platform.s);
+            PlayerPrefs.Save();
+            Debug.Log("Game data saved!");
             SceneManager.LoadScene(0);
             //Debug.Log("test");
         }
