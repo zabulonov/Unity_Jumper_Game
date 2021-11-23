@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Shop.unity
     guid: fc371108650334b44b21e831bf2c677c
   - enabled: 1
-    path: Assets/Scenes/Ranks.unity
+    path: Assets/Scenes/About.unity
     guid: f05b3c33dcbf8af45b27a4ff3dc48971
   m_configObjects: {}

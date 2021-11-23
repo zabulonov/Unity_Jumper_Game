@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 657570864}
   - component: {fileID: 657570863}
   m_Layer: 5
-  m_Name: Rank
+  m_Name: AboutText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -530,7 +530,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RANK
+  m_Text: ABOUT
 --- !u!222 &657570864
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1230,7 +1230,7 @@ GameObject:
   - component: {fileID: 1555529778}
   - component: {fileID: 1555529777}
   m_Layer: 5
-  m_Name: ButtonRank
+  m_Name: ButtonAbout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
