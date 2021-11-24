@@ -543,6 +543,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 888867653}
   Platform: {fileID: 1117487380}
+--- !u!1 &1055994253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 654072825670832925, guid: cc4a25fb03c3cd5499fa957fda7beb2c, type: 3}
+  m_PrefabInstance: {fileID: 654072824497784800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1055994258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055994253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700222c9dbd37974cb52586f902e6f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 8f469ab6009e58b4cbdb70e4a0323c41, type: 3}
+  - {fileID: 21300000, guid: 51cd0d6f1498c7945868545892a7c4ca, type: 3}
+  - {fileID: 21300000, guid: 4fb5c12b0f1fdca4f8f8ee1991528cba, type: 3}
 --- !u!114 &1117487380 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2054707157982667458, guid: ac8b7dbb5a8a3184a80530a536f79a7d, type: 3}

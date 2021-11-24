@@ -6,11 +6,13 @@ public class Platform : MonoBehaviour
 {
     public float ForceJump;
     public int s = 0;
+    public GameObject sound;
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.relativeVelocity.y < 0)
         {
             Hero.instance.HeroRigid.velocity = Vector2.up * ForceJump;
+            Instantiate(sound, transform.position, Quaternion.identity);
         } 
     }
     public void OnCollisionExit2D(Collision2D collision)

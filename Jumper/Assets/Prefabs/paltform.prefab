@@ -165,3 +165,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ForceJump: 12
+  s: 0
+  sound: {fileID: 714800176895153893, guid: 3573656d8b3e65045b62333f24d1eadf, type: 3}
