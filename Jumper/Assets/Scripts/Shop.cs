@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Shop : MonoBehaviour
 {
     private int money;
     private int skin_1 = 0, skin_2 = 0;
     private int CurSkin = 0;
+    public Text txt;
     void Start()
     {
         money = PlayerPrefs.GetInt("SavedScore");
@@ -23,10 +24,11 @@ public class Shop : MonoBehaviour
         PlayerPrefs.SetInt("CurSkin", CurSkin);
         PlayerPrefs.Save();
         Debug.Log("Game data saved!");
+        txt.text = money.ToString();
     }
     public void Buy_skin_1()
     {
-        if (money < 10)
+        if (money < 9)
         {
             Debug.Log("Нехватка коинов, скин 1");
             return;
@@ -42,7 +44,7 @@ public class Shop : MonoBehaviour
     }
     public void Buy_skin_2()
     {
-        if (money < 25)
+        if (money < 24)
         {
             Debug.Log("Нехватка коинов, скин 2");
             return;
